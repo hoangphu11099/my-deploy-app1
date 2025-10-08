@@ -1,5 +1,5 @@
 //@ts-nocheck
-import { Link, router } from '@inertiajs/react';
+import { Link, router, useForm } from '@inertiajs/react';
 export default function Index({ links, q, base }) {
     const { data, setData, post, processing, errors, reset } = useForm({ long_url: '' });
     const onSubmit = (e) => {
